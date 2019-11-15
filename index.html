@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Sample Form</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="http://clipart-library.com/new_gallery/93-939160_soccer-ball-png-file-soccer-ball-svg.png" alt="Football Logo" id="logo">
+      <hr>
+      <form action="submission.html" method="POST">
+        <h1>Register Your Team!</h1>
+					<section class="team-name">
+          <label for="patty">Enter your team name</label>
+    			<input type="text" name="team-name" id="team-name" required>
+        </section>
+        <hr>
+        <section class="players">
+          <label for="amount">How many players are on your team?</label>
+          <input type="number" name="amount" id="amount" value="7" min="7" max="25">
+        </section>
+        <hr>
+        <section class="rating">
+          <label for="own-rating">How do you rate yourselves as a team?</label>
+          <br>
+          <span>Novices</span>
+          <input type="range" name="own-rating" id="own-rating" value="50" min="1" max="100" step="10">
+          <span>Quality</span>
+        </section>
+        <hr>
+        <section class="regions">
+          <span>Are your players from any of these reigions?</span>
+          <br>
+          <input type="checkbox" name="region" id="t&w" value="t&w">
+          <label for="t&w">Tyne & Wear</label>
+          <input type="checkbox" name="region" id="newcastle" value="newcastle">
+          <label for="newcastle">Newcastle</label>
+          <input type="checkbox" name="region" id="sunderland" value="sunderland">
+          <label for="sunderland">Sunderland</label>
+          <input type="checkbox" name="region" id="durham" value="durham">
+          <label for="durham">Sunderland</label>
+          <br/>
+          <input type="checkbox" name="region" id="york" value="york">
+          <label for="york">York</label>
+          <input type="checkbox" name="region" id="leeds" value="leeds">
+          <label for="leeds">Leeds</label>
+          <input type="checkbox" name="region" id="ponteland" value="ponteland">
+          <label for="ponteland">Ponteland</label>
+          <input type="checkbox" name="region" id="seaham" value="seaham">
+          <label for="seaham">Seaham</label>
+        </section>
+        <hr>
+        <section class="cup">
+          <span>Would you like to participate in the county cup for an <span class="tooltip"><strong>extra fee</strong>? <span class="tooltiptext">Entry Fee: £150.00</span></span></span>
+          <br>
+          <input type="radio" name="cup" id="yes" value="yes" required>
+          <label for="yes">Yes</label>
+          <input type="radio" name="cup" id="no" value="no">
+          <label for="no">No</label>
+        </section>
+        <hr>
+        <section class="region-type">
+          <label for="region-league" required>What league would you like to play in?</label>
+          <select name="region-league" id="region-league">
+            <option value="northumberland">Northumberland</option>
+            <option value="tynewear">Tyne & Wear</option>
+            <option value="sunderland">Sunderland</option>
+          </select>
+        </section>
+        <hr>
+        <section class="ref-selection">
+          <label for="ref">Choose your preferred referee?</label>
+          <input list="refs" id="ref" name="ref" required>
+          <datalist id="refs">
+            <option value="Jack Schuster"></option>
+            <option value="John Michaels"></option>
+            <option value="Aidan Hart"></option>
+            <option value="Lee Haynes"></option>
+            <option value="Stephen Elliott"></option>
+            <option value="Didier Drogba"></option>
+          </datalist>
+        </section>
+        <hr>
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        <hr>
+
+        <section class="submission">
+          <!--Add your code below-->
+          <input type="submit" />
+        </section>
+        
+      </form>
+    </section>
+  </body>
+</html>
